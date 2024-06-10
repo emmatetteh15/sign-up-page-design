@@ -1,0 +1,163 @@
+@import url("https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+
+/* Body Design */
+
+body {
+  text-align: center;
+  background-image: linear-gradient(45deg, #ff7f50, #ebd6d6, #7fd8be);
+}
+
+.divContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: gray 2px 2px 2px 2px;
+}
+
+.divContainter_form {
+  width: 20rem;
+  text-align: center;
+}
+
+.divContainer_image {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.divContainer_image img {
+  object-fit: contain;
+}
+
+input {
+  width: fit-content;
+  outline: none;
+  background-color: inherit;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+.inputContainer {
+  margin-left: 20px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.icon {
+  font-size: 30px;
+  margin: 2px;
+  margin-bottom: -5px;
+}
+
+img {
+  width: 20rem;
+  height: 30rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.head {
+  color: #2a443e;
+}
+
+.button_container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.button_submit,
+.button_reset {
+  border-style: groove;
+  width: 7rem;
+  border-radius: 10px;
+  border-color: #2a443e;
+  padding: 4px;
+  font-size: 1.5rem;
+  background-color: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.button_reset:hover,
+.button_submit:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.button_options {
+  display: inline;
+  padding: 1px;
+  justify-content: space-between;
+  width: 2rem;
+  height: 2rem;
+  transition: 0.5s ease-in-out;
+  border-radius: 13px;
+}
+
+.button_options:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 640px) {
+  .button_submit,
+  .button_reset {
+    width: 100%;
+  }
+
+  .inputContainer {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .icon {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 10px;
+  }
+
+  input::placeholder {
+    font-size: 0.5rem;
+  }
+
+  .button_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button_options {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+}
